@@ -11,6 +11,8 @@ public class ifCetakKRS24 {
         if (uktLunas) {
             System.out.println("pembayaran UKT terverifikasi");
             System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
+        } else {
+            System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
         }
     }
 }
