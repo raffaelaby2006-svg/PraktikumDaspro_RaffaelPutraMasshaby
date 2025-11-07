@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEMBUT BERKELAZ</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>WEBSITE HEAD 1</h1>
+        <p>PARAGRAF SATU.</p>
+        <ul>
+            <li onclick="showSection('profil')">PROFIL KELOMPOK</li>
+            <li onclick="showSection('perusahaan')">PERUSAHAAN</li>
+            <li onclick="showSection('sop')">SOP</li>
+            <li onclick="showSection('proses')">PROSES</li>
+            <li onclick="showSection('list5')">LIST 5</li>
+            <li onclick="showSection('list6')">LIST 6</li>
+        </ul>
+    </nav>
+
+    <section id="profil" class="active">
+        <h2>Profil Kelompok</h2>
+        <p>Nama Kelompok: JEMBUT BERKELAZ</p>
+        <ul>
+            <li>Anggota 1</li>
+            <li>Anggota 2</li>
+            <li>Anggota 3</li>
+            <li>Anggota 4</li>
+        </ul>
+    </section>
+
+    <section id="perusahaan">
+        <h2>Perusahaan</h2>
+        <p>Informasi tentang perusahaan tempat magang atau studi kasus kelompok.</p>
+    </section>
+
+    <section id="sop">
+        <h2>SOP</h2>
+        <p>Berisi langkah-langkah prosedur kerja kelompok.</p>
+        <a href="file:///C:/PraktikumDaspro_RaffaelPutraMasshaby/jobsheet9/Untitled-3.html#proses-produksi"></a>
+    </section>
+
+    <section id="proses">
+        <h2>Proses</h2>
+        <p>Menjelaskan tahapan pengerjaan proyek atau laporan.</p>
+    </section>
+
+    <section id="list5">
+        <h2>List 5</h2>
+        <p>Isi tambahan bagian 5.</p>
+
+        
+    </section>
+
+    <section id="list6">
+        <h2>List 6</h2>
+        <p>Isi tambahan bagian 6.</p>
+        <h1>ini adalah halaman 1 </h1>
+    </section>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
